@@ -328,8 +328,8 @@ service:
 ##
 autoscaling:
   enabled: true
-   minReplicas: 5
-   maxReplicas: 12
+  minReplicas: 5
+  maxReplicas: 12
    metrics:
    - type: Resource
      resource:
@@ -339,7 +339,7 @@ autoscaling:
      resource:
        name: memory
        targetAverageUtilization: 60
-   behavior:
+  behavior:
     scaleDown:
       stabilizationWindowSeconds: 300
       policies:
