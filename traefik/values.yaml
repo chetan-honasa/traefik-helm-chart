@@ -296,7 +296,7 @@ tlsOptions: {}
 service:
   enabled: true
   type: LoadBalancer
-  # Additional annotations (e.g. for cloud provider specific config)
+  # Additional annotations (e.g. for cloud provider specific config).
   annotations: {}
     kubernetes.io/ingress.class: "alb"
     alb.ingress.kubernetes.io/scheme: internet-facing
