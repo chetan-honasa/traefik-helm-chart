@@ -75,7 +75,7 @@ items:
         app.kubernetes.io/instance: {{ .Release.Name }}
       annotations:
       {{- with .Values.service.annotations }}
-      {{- toYaml . | nindent 8 }}
+      {{- toYaml . | indent 8 }}
       {{- end }}
     spec:
       {{- $type := default "LoadBalancer" .Values.service.type }}
